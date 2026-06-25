@@ -34,6 +34,14 @@ export const galleryConfig: GalleryConfig = {
 			password: "123456",
 			passwordHint: "示例密码123456",
 		},
+		{
+			id: "123",
+			name: "哲风壁纸",
+			description: "精选壁纸",
+			location: "哲风壁纸",
+			date: "2026-06-20",
+			tags: ["图库", "壁纸"],
+		},
 	],
 
 	// 瀑布流最小列宽(px)，浏览器根据容器宽度自动计算列数，默认 240
