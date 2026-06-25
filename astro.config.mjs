@@ -42,6 +42,12 @@ import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkPlantuml } from "./src/plugins/remark-plantuml.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
+
+export default defineConfig({
+  site: "https://fanyanbalin.github.io",
+  base: "/Firefly",
+});
+
 if (process.env.NODE_ENV === "development") {
 	setMaxListeners(20);
 }
