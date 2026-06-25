@@ -43,11 +43,6 @@ import { remarkPlantuml } from "./src/plugins/remark-plantuml.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 
-export default defineConfig({
-  site: "https://fanyanbalin.github.io",
-  base: "/Firefly",
-});
-
 if (process.env.NODE_ENV === "development") {
 	setMaxListeners(20);
 }
@@ -60,9 +55,8 @@ const adapter = process.env.CF_WORKERS
 
 // https://astro.build/config
 export default defineConfig({
-	site: siteConfig.site_url,
-
-	base: "/",
+	site: "https://fanyanbalin.github.io",
+  	base: "/Firefly",
 	trailingSlash: "always",
 
 	// 字体配置 - 只加载实际使用的字体，跳过未引用的以加快构建
